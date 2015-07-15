@@ -1,0 +1,339 @@
+-#!!!
+-#%html
+  %head
+
+    / CSS
+    %link{:href => "", :rel => "stylesheet"}/
+    %link{:href => "http:", :rel => "stylesheet"}/
+    %link{:href => "assets/bootstrap/css/bootstrap.min.css", :rel => "stylesheet"}/
+    %link{:href => "assets/font-awesome/css/font-awesome.min.css", :rel => "stylesheet"}/
+    %link{:href => "assets/elegant-icons/css/elegant-icons.min.css", :rel => "stylesheet"}/
+    %link{:href => "assets/ionicons/css/ionicons.min.css", :rel => "stylesheet"}/
+    %link{:href => "assets/owl-carousel/owl.carousel.css", :rel => "stylesheet"}/
+    %link{:href => "assets/owl-carousel/owl.theme.css", :rel => "stylesheet"}/
+      %link{:href => "assets/cubeportfolio/css/cubeportfolio.min.css", :rel => "stylesheet"}/
+    %link{:href => "assets/css/style_original.css", :rel => "stylesheet"}/
+    / Colors
+    / <link rel="stylesheet" type="text/css" href="assets/css/colors/red.css">
+    / <link rel="stylesheet" type="text/css" href="assets/css/colors/orange.css">
+    / <link rel="stylesheet" type="text/css" href="assets/css/colors/green.css">
+    / <link rel="stylesheet" type="text/css" href="assets/css/colors/lime.css">
+    / <link rel="stylesheet" type="text/css" href="assets/css/colors/brown.css">
+    / <link rel="stylesheet" type="text/css" href="assets/css/colors/blue.css">
+    / <link rel="stylesheet" type="text/css" href="assets/css/colors/yellow.css">
+    / <link rel="stylesheet" type="text/css" href="assets/css/colors/purple.css">
+    / CSS FOR DEMO - NOT INCLUDED IN MAIN FILES
+    %link{:href => "assets/css/switcher.css", :rel => "stylesheet"}/
+    %link#colors{:href => "assets/css/style1.css", :rel => "stylesheet"}/
+    / HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    /[if lt IE 9]
+
+  %body{"data-offset" => "80", "data-spy" => "scroll"}
+.navbar.navbar-default.navbar-fixed-top.menu-top{:role => "navigation"}
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{:href => "index.html#home"}
+
+    .navbar-collapse.collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{:href => "index.html#home"} Home
+        %li
+          %a{:href => "index.html#features-section"} Why?
+        %li
+          %a{:href => "index.html#portfolio-section"} Portfolio
+        %li
+          %a{:href => "index.html#pricing-section"} Pricing
+        %li
+          %a{:href => "index.html#contact-section"} Contact
+/ Top content
+#home.parallax.top-content{"data-stellar-background-ratio" => "0.3"}
+  .inner-bg
+    .container
+      .row
+        .col-md-12.top-description
+          = image_tag 'dreamlopers_blanco.png'
+          .top-button
+            %a.btn.btn-top.btn-lg{:href => "index.html#portfolio-section"} Our Portfolio
+/ Features
+#features-section.features-container
+  .container
+    .row
+      .col-sm-12.features
+        %h1
+          WHY?
+    .row
+      .col-sm-4.features-box1
+        .icon
+          %i.icon.ion-earth
+        %h4 En el mundo...
+        %p
+          No todo esta hecho.
+      .col-sm-4.features-box2
+        .icon
+          %i.icon.ion-lightbulb
+        %h4 Todos tenemos buenas ideas...
+        %p
+          Solo tenemos que encontrar el camino para hacerlas realidad.
+      .col-sm-4.features-box3
+        .icon
+          %i.icon.ion-clipboard
+        %h4 Nosotros...
+        %p
+          Ut lobortis auctor est, quis ornare orci tristique vel. Pellentesque sit amet ultricies nisl. Ut aliquet dolor mi, vitae varius felis elementum.
+      .col-sm-4.features-box4
+        .icon
+          %i.icon.ion-earth
+        %h4 Lorem Ipsum
+        %p
+          Ut lobortis auctor est, quis ornare orci tristique vel. Pellentesque sit amet ultricies nisl. Ut aliquet dolor mi, vitae varius felis elementum.
+      .col-sm-4.features-box5
+        .icon
+          %i.icon.ion-flash-off
+        %h4 Lorem Ipsum
+        %p
+          Ut lobortis auctor est, quis ornare orci tristique vel. Pellentesque sit amet ultricies nisl. Ut aliquet dolor mi, vitae varius felis elementum.
+      .col-sm-4.features-box6
+        .icon
+          %i.icon.ion-levels
+        %h4 Lorem Ipsum
+        %p
+          Ut lobortis auctor est, quis ornare orci tristique vel. Pellentesque sit amet ultricies nisl. Ut aliquet dolor mi, vitae varius felis elementum.
+/ Product
+.product-container.product-bg1
+  .container
+    .row
+      .col-sm-10.col-sm-offset-1.col-md-10.col-md-offset-1.col-lg-10.col-lg-offset-1
+        .product
+          %h1
+            HOW?
+          = image_tag 'rocket.png', width: 100
+/ Product
+.product-container.product-bg2
+  .container
+    .row
+      .col-lg-6.col-sm-6
+        .productbox
+          %div
+            %i.icon.ion-erlenmeyer-flask
+          %h5 Lorem Ipsum
+          Nulla fringilla dapibus nisieu accumsan arcu convallis tincidunt donec mauris libero laciniade mollis malesuade odio interdum. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. Praesent faucibus nisl sit amet nulla sollicitudin.
+        .productbox
+          %div
+            %i.icon.ion-android-boat
+          %h5 Lorem Ipsum
+          Nulla fringilla dapibus nisieu accumsan arcu convallis tincidunt donec mauris libero laciniade mollis malesuade odio interdum. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. Praesent faucibus nisl sit amet nulla sollicitudin.
+        .productbox
+          %div
+            %i.icon.ion-android-archive
+          %h5 Lorem Ipsum
+          Nulla fringilla dapibus nisieu accumsan arcu convallis tincidunt donec mauris libero laciniade mollis malesuade odio interdum. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. Praesent faucibus nisl sit amet nulla sollicitudin.
+      .col-lg-6.col-sm-6
+        .productbox
+          %div
+            %i.icon.ion-ios-speedometer
+          %h5 Lorem Ipsum
+          Nulla fringilla dapibus nisieu accumsan arcu convallis tincidunt donec mauris libero laciniade mollis malesuade odio interdum. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. Praesent faucibus nisl sit amet nulla sollicitudin.
+        .productbox
+          %div
+            %i.icon.ion-pie-graph
+          %h5 Lorem Ipsum
+          Nulla fringilla dapibus nisieu accumsan arcu convallis tincidunt donec mauris libero laciniade mollis malesuade odio interdum. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. Praesent faucibus nisl sit amet nulla sollicitudin.
+        .productbox
+          %div
+            %i.icon.ion-trophy
+          %h5 Lorem Ipsum
+          Nulla fringilla dapibus nisieu accumsan arcu convallis tincidunt donec mauris libero laciniade mollis malesuade odio interdum. Integer sed magna vel velit dignissim luctus eu in urna. Dapibus egestas turpis. Praesent faucibus nisl sit amet nulla sollicitudin.
+
+/ Callaction
+#callaction-container.callaction-container
+  .inner-callaction
+    .container
+      .row
+        %h4 El peor fracaso en la vida es cometer la equivocación de jamás haberlo intentado."
+
+/ Pricing
+#pricing-section.pricing-container
+  .container
+    .row
+      .col-sm-12.pricing
+        %h1
+          WHAT?
+    .row
+      .col-md-4.toLeft
+        .price-column
+          %h2 DreamSchool
+          %ul
+            %li DWADAW
+            %li Mauris auctor massa libero
+            %li Praesent magna tortor
+            %li Cras et fermentum massa
+            %li
+      .col-md-4.toIn
+        .price-column.large
+          %h2 DreamLabs
+          %ul
+            %li DWADAW
+            %li Mauris auctor massa libero
+            %li Praesent magna tortor
+            %li Cras et fermentum massa
+            %li
+      .col-md-4.toRight
+        .price-column
+          %h2 DreamBuilder
+          %ul
+            %li DWADAW
+            %li Mauris auctor massa libero
+            %li Praesent magna tortor
+            %li Cras et fermentum massa
+            %li
+  #portfolio-section.portfolio-container
+    .container
+      .row
+        .col-sm-12.portfolio
+          %h3 Portfolio
+          %p Ut lobortis auctor est, quis ornare orci tristique vel. Pellentesque sit amet ultricies nisl.
+      .cbp-panel
+        #filters-container.cbp-l-filters-work
+          .cbp-filter-item-active.cbp-filter-item{"data-filter" => "*"}
+            show all
+          .cbp-filter-item{"data-filter" => ".identity"}
+            identity
+          .cbp-filter-item{"data-filter" => ".web-design"}
+            web design
+          .cbp-filter-item{"data-filter" => ".graphic"}
+            graphic
+          .cbp-filter-item{"data-filter" => ".logos"}
+            logo
+        #grid-container.cbp.cbp-l-grid-work
+          .cbp-item.identity
+            %a.cbp-caption.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project1.html"}
+              .cbp-caption-defaultWrap
+                %img{:alt => "", :src => "portfolio/1a.jpg"}/
+              .cbp-caption-activeWrap
+            %a.cbp-l-grid-work-title.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project1.html"} Dashboard
+            .cbp-l-grid-work-desc Web Design / Graphic
+          .cbp-item.web-design.logos
+            %a.cbp-caption.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project2.html"}
+              .cbp-caption-defaultWrap
+                %img{:alt => "", :src => "portfolio/2a.jpg"}/
+              .cbp-caption-activeWrap
+            %a.cbp-l-grid-work-title.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project2.html"} World Clock Widget
+            .cbp-l-grid-work-desc Logo / Web Design
+          .cbp-item.graphic.logos
+            %a.cbp-caption.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project3.html"}
+              .cbp-caption-defaultWrap
+                %img{:alt => "", :src => "portfolio/3a.jpg"}/
+              .cbp-caption-activeWrap
+            %a.cbp-l-grid-work-title.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project3.html"} To-Do Dashboard
+            .cbp-l-grid-work-desc Graphic / Logo
+          .cbp-item.web-design.graphic
+            %a.cbp-caption.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project4.html"}
+              .cbp-caption-defaultWrap
+                %img{:alt => "", :src => "portfolio/4a.jpg"}/
+              .cbp-caption-activeWrap
+            %a.cbp-l-grid-work-title.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project4.html"} Events and More
+            .cbp-l-grid-work-desc Web Design / Graphic
+          .cbp-item.identity.web-design
+            %a.cbp-caption.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project5.html"}
+              .cbp-caption-defaultWrap
+                %img{:alt => "", :src => "portfolio/5a.jpg"}/
+              .cbp-caption-activeWrap
+            %a.cbp-l-grid-work-title.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project5.html"} WhereTO App
+            .cbp-l-grid-work-desc Web Design / Identity
+          .cbp-item.identity.web-design
+            %a.cbp-caption.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project6.html"}
+              .cbp-caption-defaultWrap
+                %img{:alt => "", :src => "portfolio/6a.jpg"}/
+              .cbp-caption-activeWrap
+            %a.cbp-l-grid-work-title.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project6.html"} Ski * Buddy
+            .cbp-l-grid-work-desc Identity / Web Design
+        #loadMore-container.cbp-l-loadMore-button
+          %a.cbp-l-loadMore-link{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/loadMore.html"}
+            %span.cbp-l-loadMore-defaultText load more
+            %span.cbp-l-loadMore-loadingText loading...
+            %span.cbp-l-loadMore-noMoreLoading no more works
+/ Testimonials
+.container
+  .row
+    .col-sm-12.testimonials
+      %h3 What our customers have to say...
+      .col-md-12.text-center
+        #testimonial-carousel.owl-carousel.owl-spaced
+          %div
+            %img.img-responsive.img-thumbnail{:alt => "", :src => "testimonials/1.jpg"}/
+            %h4
+              Pellentesque sit amet augue a mi luctus laoreet ut nec velit. Morbi in fermentum elit. Curabitur pellentesque neque eget diam posuere porta. Aliquam imperdiet nulla id scelerisque auctor. Proin egestas mauris vel arcu bibendum ornare.
+            %p -Diana Rosswert
+          %div
+            %img.img-responsive.img-thumbnail{:alt => "", :src => "testimonials/2.jpg"}/
+            %h4
+              Pellentesque sit amet augue a mi luctus laoreet ut nec velit. Morbi in fermentum elit. Curabitur pellentesque neque eget diam posuere porta. Aliquam imperdiet nulla id scelerisque auctor. Proin egestas mauris vel arcu bibendum ornare.
+            %p -Diana Rosswert
+          %div
+            %img.img-responsive.img-thumbnail{:alt => "", :src => "testimonials/3.jpg"}/
+            %h4
+              Pellentesque sit amet augue a mi luctus laoreet ut nec velit. Morbi in fermentum elit. Curabitur pellentesque neque eget diam posuere porta. Aliquam imperdiet nulla id scelerisque auctor. Proin egestas mauris vel arcu bibendum ornare.
+            %p -Diana Rosswert
+/ Contact us
+#contact-section.contact-container
+  .inner-contact
+    .container
+      .row
+        .col-sm-12.contact
+          %h3 Contact Us
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pharetra odio ac felis iaculis cursus aliquet quis orci. Nunc id lorem ut mi euismod accumsan.
+      .row
+        .col-sm-7.form-group.contact-form
+          %h4 Send Message
+          %form{:action => "http://themebootstrap.net/primes-v1.5.1/template-08/assets/contact.php", :method => "post"}
+            %input.form-control.contact-email{:name => "email", :placeholder => "Email", :type => "text"}/
+            %input.form-control.contact-subject{:name => "subject", :placeholder => "Subject", :type => "text"}/
+            %textarea.form-control{:name => "message", :placeholder => "Message"}
+            %button.btn.btn-contact{:type => "submit"} Submit
+        .col-sm-5.contact-address.contact-about
+          %h4 About Us
+          %p Fusce at leo eros. Morbi mauris arcu, eleifend sit amet turpis ac, porta luctus neque. Etiam ultricies ac augue a venenatis. Quisque aliquam odio eu magna sodales, vel interdum erat suscipit. Mauris ut porttitor tellus. Integer ac bibendum lectus. Quisque interdum aliquam felis vel volutpat. Vivamus commodo felis quis dui pharetra, ac venenatis magna lacinia. Vestibulum quis dignissim nibh. Duis vitae felis orci. Aliquam porta interdum feugiat. Ut ac varius nibh. Nullam est nisl, sagittis sed risus vel, facilisis commodo tortor. Suspendisse suscipit tellus vitae tellus porta rutrum. Proin ac orci auctor, consequat dolor nec, scelerisque nisl.
+          %h4 Address
+          %p
+            %i.fa.fa-map-marker>
+            13 Brant Street, Burlington, Ontario, Canada
+          %p
+            %i.fa.fa-phone>
+            Phone: 0011 222 335 7773
+/ footer
+#footer
+  %h3 Siguenos!
+  %p Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse suscipit tellus vitae tellus porta rutrum. Aliquam imperdiet nulla id scelerisque auctor.
+  .follow-us
+    %a.social-icon{:href => "https://www.facebook.com/dreamlopers"}
+      %i.fa.fa-facebook
+    %a.social-icon{:href => "https://twitter.com/dreamlopers"}
+      %i.fa.fa-twitter
+    %a.social-icon{:href => "index.html#"}
+      %i.fa.fa-linkedin
+    %a.social-icon{:href => "index.html#"}
+      %i.fa.fa-pinterest
+    %a.social-icon{:href => "index.html#"}
+      %i.fa.fa-google-plus
+/ footer 2
+#footer2
+  .container
+    .row
+      .col-sm-12
+        .copyright
+          \©Dreamlopers
+          :javascript
+            //<![CDATA[
+                var d = new Date()
+                document.write(d.getFullYear())
+                //]]>
+/ STYLE SWITCHER - ONLY FOR DEMO NOT INCLUDED IN MAIN FILES
+
+/ Javascript
