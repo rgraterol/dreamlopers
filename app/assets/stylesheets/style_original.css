@@ -401,8 +401,10 @@ color: #888;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    background-position: center 920px;
+    /*background-position: center 920px;*/
     background-attachment: fixed;
+    background-position: center center;
+
 }
 
 .inner-bg {
@@ -1471,7 +1473,7 @@ color: #888;
 .testimonials img{ 
 	width:100px;
 	height:100px;
-	display:block;
+	/*display:block;*/
 	margin:10px auto;
     padding: 0px;
 	border-radius:100px;
