@@ -1907,3 +1907,35 @@ color: #0dc0c0;
 	
 
 }
+
+/*ADING TIPS*/
+.post.tips.lila_azul{
+    background: #6e51e5;
+}
+
+.post.tips.lila_lila{
+    background: #7d5cb5;
+}
+
+.post.tips.rosa{
+    background: #d50074;
+}
+
+.post.tips.calipso{
+    background: #00dbef;
+}
+
+.post.tips.azul{
+    background: #0026cb;
+}
+
+.post.tips.verde{
+    background: #00d39f;
+}
+
+.post.tips.facebook{
+    background: #2c55aa;
+}
+.post.tips.twitter{
+    background: #55acee;
+}
