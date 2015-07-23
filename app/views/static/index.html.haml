@@ -330,67 +330,23 @@
             %i.fa.fa-phone>
             Phone: 0011 222 335 7773
 -# Agregando TIPS
-#tips
-  .container
-    .row
-      .col-sm-12.testimonials
-        %h1 Tips...
-    .row
-      .col-sm-3.post.tips.calipso
-        = link_to '' do
-          %h3 5 LIBROS QUE TODO EMPRENDEDOR DEBE LEER Y PORQUÉ
-          .bottom
-            %h4 Tip-37
-      .col-sm-3.post.tips.azul
-        = link_to '' do
-          %h3 5 LIBROS QUE TODO EMPRENDEDOR DEBE LEER Y PORQUÉ
-          .bottom
-            %h4 Tip-37
-      .col-sm-3.post.tips.verde
-        = link_to '' do
-          %h3 5 LIBROS QUE TODO EMPRENDEDOR DEBE LEER Y PORQUÉ
-          .bottom
-            %h4 Tip-37
-      .col-sm-3.post.tips.facebook
-        = link_to '' do
-          %h3 5 LIBROS QUE TODO EMPRENDEDOR DEBE LEER Y PORQUÉ
-          .bottom
-            %h4 Tip-37
-    .row
-      .col-sm-3.post.tips.twitter
-        = link_to '' do
-          %h3 5 LIBROS QUE TODO EMPRENDEDOR DEBE LEER Y PORQUÉ
-          .bottom
-            %h4 Tip-37
-      .col-sm-3.post.tips.rosa
-        = link_to '' do
-          %h3 5 LIBROS QUE TODO EMPRENDEDOR DEBE LEER Y PORQUÉ
-          .bottom
-            %h4 Tip-37
-      .col-sm-3.post.tips.lila_lila
-        = link_to '' do
-          %h3 5 LIBROS QUE TODO EMPRENDEDOR DEBE LEER Y PORQUÉ
-          .bottom
-            %h4 Tip-37
-      .col-sm-3.post.tips.lila_azul
-        = link_to '' do
-          %h3 5 LIBROS QUE TODO EMPRENDEDOR DEBE LEER Y PORQUÉ
-          .bottom
-            %h4 Tip-37
+= render partial: 'static/tips'
 -# Agregando TIPS
 / footer
 #footer
-  %h3 Siguenos!
-  %p Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse suscipit tellus vitae tellus porta rutrum. Aliquam imperdiet nulla id scelerisque auctor.
+  %h1 Follow us!
+  %p
+    Find us in the way as you know, using social networks. We will be there to help you and make the world shine.
+    %i.fa.fa-smile-o
   .follow-us
     %a.social-icon{:href => "https://www.facebook.com/dreamlopers"}
       %i.fa.fa-facebook
     %a.social-icon{:href => "https://twitter.com/dreamlopers"}
       %i.fa.fa-twitter
-    %a.social-icon{:href => "index.html#"}
-      %i.fa.fa-linkedin
-    %a.social-icon{:href => "index.html#"}
-      %i.fa.fa-pinterest
+    -#%a.social-icon{:href => "index.html#"}
+    -#  %i.fa.fa-linkedin
+    -#%a.social-icon{:href => "index.html#"}
+    -#  %i.fa.fa-pinterest
     %a.social-icon{:href => "index.html#"}
       %i.fa.fa-google-plus
 / footer 2
@@ -405,6 +361,9 @@
                 var d = new Date()
                 document.write(d.getFullYear())
                 //]]>
+          %h3
+            Follow the rocket
+          %i.fa.fa-rocket.fa-3x
 / STYLE SWITCHER - ONLY FOR DEMO NOT INCLUDED IN MAIN FILES
 
 / Javascript
