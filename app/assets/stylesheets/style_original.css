@@ -1,4 +1,11 @@
 /***** General *****/
+.blue{
+    color: #4254fd;
+}
+
+.red{
+    color: red;
+}
 
 body {
     background: #fff;
