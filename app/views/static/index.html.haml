@@ -235,58 +235,58 @@
         #filters-container.cbp-l-filters-work
           .cbp-filter-item-active.cbp-filter-item{"data-filter" => "*"}
             show all
-          .cbp-filter-item{"data-filter" => ".identity"}
-            identity
-          .cbp-filter-item{"data-filter" => ".web-design"}
-            web design
-          .cbp-filter-item{"data-filter" => ".graphic"}
-            graphic
-          .cbp-filter-item{"data-filter" => ".logos"}
-            logo
+          .cbp-filter-item{"data-filter" => ".ror"}
+            Ruby on Rails
+          .cbp-filter-item{"data-filter" => ".wordpress"}
+            Wordpress
+          .cbp-filter-item{"data-filter" => ".laravel"}
+            Laravel
+          .cbp-filter-item{"data-filter" => ".jquery"}
+            jQuery
         #grid-container.cbp.cbp-l-grid-work
-          .cbp-item.identity
-            %a.cbp-caption.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project1.html"}
+          .cbp-item.ror
+            %a.cbp-caption.cbp-singlePage{:href => "ajax/shoppr.html"}
               .cbp-caption-defaultWrap
-                %img{:alt => "", :src => "portfolio/1a.jpg"}/
+                = image_tag 'portfolio/shoppr_screen2.png'
               .cbp-caption-activeWrap
-            %a.cbp-l-grid-work-title.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project1.html"} Dashboard
-            .cbp-l-grid-work-desc Web Design / Graphic
-          .cbp-item.web-design.logos
-            %a.cbp-caption.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project2.html"}
+            %a.cbp-l-grid-work-title.cbp-singlePage{:href => "ajax/shoppr.html"} Shoppr
+            .cbp-l-grid-work-desc Ruby on Rails
+          .cbp-item.jquery
+            %a.cbp-caption.cbp-singlePage{:href => "ajax/xavier.html"}
               .cbp-caption-defaultWrap
-                %img{:alt => "", :src => "portfolio/2a.jpg"}/
+                = image_tag 'portfolio/xavier_screen.png'
               .cbp-caption-activeWrap
-            %a.cbp-l-grid-work-title.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project2.html"} World Clock Widget
-            .cbp-l-grid-work-desc Logo / Web Design
-          .cbp-item.graphic.logos
-            %a.cbp-caption.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project3.html"}
+            %a.cbp-l-grid-work-title.cbp-singlePage{:href => "ajax/xavier.html"} Xavier
+            .cbp-l-grid-work-desc jQuery
+          .cbp-item.laravel.jquery
+            %a.cbp-caption.cbp-singlePage{:href => "ajax/super_cerdo.html"}
               .cbp-caption-defaultWrap
-                %img{:alt => "", :src => "portfolio/3a.jpg"}/
+                = image_tag 'portfolio/super_cerdo_screen.png'
               .cbp-caption-activeWrap
-            %a.cbp-l-grid-work-title.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project3.html"} To-Do Dashboard
-            .cbp-l-grid-work-desc Graphic / Logo
-          .cbp-item.web-design.graphic
-            %a.cbp-caption.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project4.html"}
+            %a.cbp-l-grid-work-title.cbp-singlePage{:href => "ajax/super_cerdo.html"} Super Cerdo
+            .cbp-l-grid-work-desc Laravel / jQuery
+          .cbp-item.wordpress
+            %a.cbp-caption.cbp-singlePage{:href => "ajax/audax.html"}
               .cbp-caption-defaultWrap
-                %img{:alt => "", :src => "portfolio/4a.jpg"}/
+                = image_tag 'portfolio/audax_screen.png'
               .cbp-caption-activeWrap
-            %a.cbp-l-grid-work-title.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project4.html"} Events and More
-            .cbp-l-grid-work-desc Web Design / Graphic
-          .cbp-item.identity.web-design
-            %a.cbp-caption.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project5.html"}
+            %a.cbp-l-grid-work-title.cbp-singlePage{:href => "ajax/audax.html"} Audax Italiano
+            .cbp-l-grid-work-desc Wordpress
+          -#.cbp-item.identity.web-design
+            %a.cbp-caption.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/shoppr.html"}
               .cbp-caption-defaultWrap
                 %img{:alt => "", :src => "portfolio/5a.jpg"}/
               .cbp-caption-activeWrap
-            %a.cbp-l-grid-work-title.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project5.html"} WhereTO App
+            %a.cbp-l-grid-work-title.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/shoppr.html"} WhereTO App
             .cbp-l-grid-work-desc Web Design / Identity
-          .cbp-item.identity.web-design
+          -#.cbp-item.identity.web-design
             %a.cbp-caption.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project6.html"}
               .cbp-caption-defaultWrap
                 %img{:alt => "", :src => "portfolio/6a.jpg"}/
               .cbp-caption-activeWrap
             %a.cbp-l-grid-work-title.cbp-singlePage{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/project6.html"} Ski * Buddy
             .cbp-l-grid-work-desc Identity / Web Design
-        #loadMore-container.cbp-l-loadMore-button
+        -##loadMore-container.cbp-l-loadMore-button
           %a.cbp-l-loadMore-link{:href => "http://themebootstrap.net/primes-v1.5.1/template-08/ajax/loadMore.html"}
             %span.cbp-l-loadMore-defaultText load more
             %span.cbp-l-loadMore-loadingText loading...
