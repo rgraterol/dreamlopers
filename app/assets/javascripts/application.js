@@ -19,3 +19,14 @@
 //= require owl-carousel/owl.carousel
 //= require cubeportfolio/jquery.cubeportfolio.min
 //= require_tree .
+$(document).on('mouseenter','#tips .post.tips.tip, #tips .post.tips.producto', function(){
+    if( $(this).hasClass('producto') ){
+        $(this).prepend('<a target="_blank" href="'+ $(this).data('href') +'" class="readmore"></a>');
+    } else {
+        $(this).prepend('<a href="'+ $(this).data('href') +'" class="readmore"></a>');
+    }
+});
+
+$(document).on('mouseleave','#tips .post.tips.tip, #tips .post.tips.producto', function(){
+    $(this).find('.readmore').remove();
+});

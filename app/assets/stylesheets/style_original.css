@@ -1,4 +1,11 @@
 /***** General *****/
+.blue{
+    color: #4254fd;
+}
+
+.red{
+    color: red;
+}
 
 body {
     background: #fff;
@@ -396,13 +403,15 @@ color: #888;
     margin: 0 auto;
     text-align: center;
     color: #fff;
-    background: url("cloudbg.jpg");
+    background: url("backgrounds/cloudbg.jpg");
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    background-position: center 920px;
+    /*background-position: center 920px;*/
     background-attachment: fixed;
+    background-position: center center;
+
 }
 
 .inner-bg {
@@ -1471,7 +1480,7 @@ color: #888;
 .testimonials img{ 
 	width:100px;
 	height:100px;
-	display:block;
+	/*display:block;*/
 	margin:10px auto;
     padding: 0px;
 	border-radius:100px;
@@ -1904,4 +1913,36 @@ color: #0dc0c0;
 	}
 	
 
+}
+
+/*ADING TIPS*/
+.post.tips.lila_azul{
+    background: #6e51e5;
+}
+
+.post.tips.lila_lila{
+    background: #7d5cb5;
+}
+
+.post.tips.rosa{
+    background: #d50074;
+}
+
+.post.tips.calipso{
+    background: #00dbef;
+}
+
+.post.tips.azul{
+    background: #0026cb;
+}
+
+.post.tips.verde{
+    background: #00d39f;
+}
+
+.post.tips.facebook{
+    background: #2c55aa;
+}
+.post.tips.twitter{
+    background: #55acee;
 }
